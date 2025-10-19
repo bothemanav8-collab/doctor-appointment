@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Appointment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Doctor Appointment Booking</h1>
+
+<section class="doctors">
+  <h2>Available Doctors</h2>
+  <div id="doctor-list"></div>
+</section>
+
+<section class="form-section">
+  <h2>Book Appointment</h2>
+  <form id="appointmentForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <input type="tel" id="phone" placeholder="Contact Number" required>
+    <select id="doctor" required></select>
+    <input type="date" id="date" required>
+    <select id="slot" required>
+      <option value="">Select Slot</option>
+      <option value="9:00 AM">9:00 AM</option>
+      <option value="11:00 AM">11:00 AM</option>
+      <option value="1:00 PM">1:00 PM</option>
+      <option value="3:00 PM">3:00 PM</option>
+    </select>
+    <button type="submit">Book Appointment</button>
+  </form>
+  <p id="msg"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
